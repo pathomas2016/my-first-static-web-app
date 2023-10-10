@@ -1,17 +1,983 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<!-- DO NOT REMOVE. USED FOR MONITORING. -->
+<html lang="en-US" class="no-js" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="UTF-8">
+  <title>Customer Guide - Managed Azure Services Permissions for non-CSP subscriptions FAQs - Macquarie Cloud Services</title>
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  <link rel="icon" href="https://macquariecloudservices.com/wp-content/uploads/sites/3/2016/07/cropped-macquarie-circles-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://macquariecloudservices.com/wp-content/uploads/sites/3/2016/07/cropped-macquarie-circles-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://macquariecloudservices.com/wp-content/uploads/sites/3/2016/07/cropped-macquarie-circles-180x180.png" />
+<meta name="msapplication-TileImage" content="https://macquariecloudservices.com/wp-content/uploads/sites/3/2016/07/cropped-macquarie-circles-270x270.png" />
+  <link href="https://macquariecloudservices.com/wp-content/themes/macquarie/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="https://macquariecloudservices.com/wp-content/themes/macquarie/img/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="https://macquariecloudservices.com/wp-content/themes/macquarie/img/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="https://macquariecloudservices.com/wp-content/themes/macquarie/img/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+  <link href="https://macquariecloudservices.com/wp-content/themes/macquarie/img/icon-normal.png" rel="icon" sizes="128x128" />
+  <link rel="shortcut icon" href="https://macquariecloudservices.com/wp-content/themes/macquarie/favicon.ico" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  
+  <!-- IE fix for list issues on initial load  -->
+  <style type="text/css">
+    ul li {
+      list-style: none;
+    }
+  </style>
+  <link href='https://macquariecloudservices.com/wp-content/themes/macquarie/fonts/lineto-circular-pro-book.woff' rel='preload' as='font' type='font/woff' crossorigin='anonymous'><link href='https://macquariecloudservices.com/wp-content/themes/macquarie/fonts/lineto-circular-pro-bold.woff' rel='preload' as='font' type='font/woff' crossorigin='anonymous'><link href='https://macquariecloudservices.com/wp-content/themes/macquarie/fonts/fontello.woff?72245861' rel='preload' as='font' type='font/woff' crossorigin='anonymous'>
+            <script async src='https://obseu.bzcclandlord.com/i/12c2a85e95bb2057498424c9d3014e30.js' class='ct_clicktrue'></script>
+            <script async src='https://www.clickcease.com/monitor/stat.js'>
+            </script>
+        <meta name='robots' content='noindex, nofollow' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v21.2 (Yoast SEO v21.2) - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Customer Guide - Managed Azure Services Permissions for non-CSP subscriptions FAQs - Macquarie Cloud Services" />
+	<meta property="og:url" content="https://macquariecloudservices.com/managed-azure-services-permissions-non-csp-faq/" />
+	<meta property="og:site_name" content="Macquarie Cloud Services" />
+	<meta property="article:modified_time" content="2022-10-19T08:55:58+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://macquariecloudservices.com/managed-azure-services-permissions-non-csp-faq/","url":"https://macquariecloudservices.com/managed-azure-services-permissions-non-csp-faq/","name":"Customer Guide - Managed Azure Services Permissions for non-CSP subscriptions FAQs - Macquarie Cloud Services","isPartOf":{"@id":"https://macquariecloudservices.com/#website"},"datePublished":"2022-05-13T08:12:58+00:00","dateModified":"2022-10-19T08:55:58+00:00","breadcrumb":{"@id":"https://macquariecloudservices.com/managed-azure-services-permissions-non-csp-faq/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://macquariecloudservices.com/managed-azure-services-permissions-non-csp-faq/"]}]},{"@type":"BreadcrumbList","@id":"https://macquariecloudservices.com/managed-azure-services-permissions-non-csp-faq/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://macquariecloudservices.com/"},{"@type":"ListItem","position":2,"name":"Customer Guide &#8211; Managed Azure Services Permissions for non-CSP subscriptions FAQs"}]},{"@type":"WebSite","@id":"https://macquariecloudservices.com/#website","url":"https://macquariecloudservices.com/","name":"Macquarie Cloud Services","description":"Australia&#039;s specialist cloud services company","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://macquariecloudservices.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//maps.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://macquariecloudservices.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.1' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='chained-css-css' href='https://macquariecloudservices.com/wp-content/plugins/chained-quiz/css/main.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-css' href='https://macquariecloudservices.com/wp-content/plugins/site-induction/admin/library/assets/css/jquery-ui.min.css?ver=6.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='macquarie_style-css' href='https://macquariecloudservices.com/wp-content/themes/macquarie/css/core.min.css?ver=1695958654' type='text/css' media='all' />
+<link rel='stylesheet' id='minerva-kb-font/css-css' href='https://fonts.googleapis.com/css?family=Roboto:400,600' type='text/css' media='all' />
+<link rel='stylesheet' id='minerva-kb/css-css' href='https://macquariecloudservices.com/wp-content/plugins/minervakb/assets/css/dist/minerva-kb.css?ver=2.0.8' type='text/css' media='all' />
+<style id='minerva-kb/css-inline-css' type='text/css'>
+.mkb-container {width: 100%;}.mkb-content-main.mkb-content-main--has-sidebar {width: 75%;}.mkb-sidebar {width: 25%;}@media (min-width: 1025px) {.mkb-sidebar.mkb-fixed {position: fixed;top: 3em;}.mkb-sidebar.mkb-fixed-bottom {position: absolute;}}.kb-search__results-summary .kb-search-request-indicator,.mkb-widget .kb-search__results-summary .kb-search-request-indicator {color: #00bed8;}.mkb-anchors-list__item-link.active:before {background: #00aae8;}.mkb-anchors-list__item-link.active .mkb-anchors-list__item-link-label {color: #fff;}.mkb-article-text .mkb-anchors-list,.mkb-single-content .mkb-anchors-list {width: 30%;}.mkb-article-text .mkb-anchors-list.mkb-anchors-list--hierarchical,.mkb-single-content .mkb-anchors-list.mkb-anchors-list--hierarchical {width: 40%;}.kb-topic__count,.mkb-article-item__topic {color: #ffffff;background: #4a90e2;}.mkb-content-main--search .mkb-article-item__topic {  color: #ffffff;  background: #00bed8;}.mkb-article-extra__like,.mkb-article-extra__like:focus,.mkb-article-extra__like:active,.mkb-article-extra__like:visited,.mkb-article-extra__like:hover,.mkb-article-item__likes i {color: #4BB651;}.mkb-article-extra__message {border-color: #eee;background: #f7f7f7;color: #888;}.mkb-article-extra__feedback-sent-message {border-color: #eee;background: #f7f7f7;color: #888;}.mkb-article-extra__feedback-form-submit a {background: #4a90e2;color: #ffffff;}.mkb-article-extra__like.mkb-voted,.mkb-article-extra__like.mkb-voted:focus,.mkb-article-extra__like.mkb-voted:active,.mkb-article-extra__like.mkb-voted:visited,.mkb-article-extra__like.mkb-voted:hover {background-color: #4BB651;border-color: #4BB651;color: #efefef;}.mkb-article-extra__dislike,.mkb-article-extra__dislike:focus,.mkb-article-extra__dislike:active,.mkb-article-extra__dislike:visited,.mkb-article-extra__dislike:hover,.mkb-article-item__dislikes i {color: #C85C5E;}.mkb-article-extra__dislike.mkb-voted,.mkb-article-extra__dislike.mkb-voted:focus,.mkb-article-extra__dislike.mkb-voted:active,.mkb-article-extra__dislike.mkb-voted:visited,.mkb-article-extra__dislike.mkb-voted:hover {background-color: #C85C5E;border-color: #C85C5E;color: #efefef;}.kb-search .kb-search__result-topic-name {color: #ffffff;background: #00bed8;}.kb-topic .kb-topic__box-header,.kb-topic .kb-topic__title-link {color: #00bed8;}.mkb-article-item--simple .mkb-entry-header {  background: #ffffff;  padding-top: 1em;  padding-bottom: 1em;  padding-left: 1em;  padding-right: 1em;}.kb-header {background: #ffffff;}.kb-faq .kb-faq__questions .kb-faq__question-title {font-size: 1.5em;}.kb-faq__question-title {background: #4bb7e5;color: #ffffff;}.kb-faq__question-title:hover {background: #64bee5;}.kb-faq__answer {background: #ffffff;color: #333;}.kb-faq__no-results {background: #f7f7f7;color: #333;}.kb-faq__count {background: #4bb7e5;color: #ffffff;}.kb-faq .kb-faq__toggle-all .kb-faq__toggle-all-link {background: #4bb7e5;color: #ffffff;}.kb-faq .kb-faq__toggle-all .kb-faq__toggle-all-link:hover {background: #64bee5;}.kb-faq .kb-faq__category-title {margin-top: 1em;margin-bottom: 0.3em;}/* Shortcodes */.mkb-info {background: #d9edf7;color: #333333;border-color: #bce8f1;}.mkb-info__icon {color: #31708f;}.mkb-tip {background: #fcf8e3;color: #333333;border-color: #faebcc;}.mkb-tip__icon {color: #8a6d3b;}.mkb-warning {background: #f2dede;color: #333333;border-color: #ebccd1;}.mkb-warning__icon {color: #a94442;}.mkb-related-content {background: #e8f9f2;color: #333333;border-color: #2ab77b;}.mkb-related-content a {color: #007acc;}.kb-topic.kb-topic--box-view .kb-topic__inner {background: #ffffff;}.kb-topic.kb-topic--box-view .kb-topic__inner:hover {background: #eeeeee;}.mkb-widget {background: #f7f7f7;color: #000000;}.mkb-widget a,.elementor-widget-wp-widget-kb_table_of_contents_widget a,.elementor-widget-wp-widget-kb_account_widget a,.elementor-widget-wp-widget-kb_content_tree_widget a,.elementor-widget-wp-widget-kb_recent_topics_widget a,.elementor-widget-wp-widget-kb_recent_articles_widget a {color: #000000;}.elementor-widget-wp-widget-kb_content_tree_widget i.fa,.elementor-widget-wp-widget-kb_recent_topics_widget i.fa,.elementor-widget-wp-widget-kb_recent_articles_widget i.fa,.elementor-widget-wp-widget-kb_content_tree_widget i.fas,.elementor-widget-wp-widget-kb_recent_topics_widget i.fas,.elementor-widget-wp-widget-kb_recent_articles_widget i.fas,.elementor-widget-wp-widget-kb_content_tree_widget i.far,.elementor-widget-wp-widget-kb_recent_topics_widget i.far,.elementor-widget-wp-widget-kb_recent_articles_widget i.far,.mkb-widget i.fa,.mkb-widget i.fas,.mkb-widget i.far {color: #000000;}.mkb-widget .mkb-widget-title,.elementor-widget .mkb-widget-title {color: #000000;}.mkb-widget .mkb-button,.elementor-widget .mkb-button {  background: #00bed8;  color: #ffffff;}.mkb-widget-content-tree__article--active .mkb-widget-content-tree__article-title:after {background: #000000;}.mkb-root,.kb-search,.kb-search input,.mkb-shortcode-container,#mkb-client-editor,.mkb-floating-helper-wrap,.wp-block[data-type^=minervakb] {font-family: 'Roboto';}.mkb-root .kb-search ::-webkit-input-placeholder { /* Chrome/Opera/Safari */font-family: 'Roboto';}.mkb-root .kb-search ::-moz-placeholder { /* Firefox 19+ */font-family: 'Roboto';}.mkb-root .kb-search :-ms-input-placeholder { /* IE 10+ */font-family: 'Roboto';}.mkb-root .kb-search :-moz-placeholder { /* Firefox 18- */font-family: 'Roboto';}.mkb-root .mkb-single-content .mkb-article-text,.mkb-root .mkb-related-articles,#mkb-client-editor {font-size: 15px;}.mkb-root .mkb-single-content .mkb-article-text {line-height: 22px;}@media (min-width: 481px) {.mkb-root h1 {font-size: 34px;}.mkb-root h2 {font-size: 26px;}.mkb-root h3 {font-size: 24px;}.mkb-root h4 {font-size: 20px;}.mkb-root h5 {font-size: 20px;}.mkb-root h6 {font-size: 20px;}}.mkb-widget {font-size: 15px;}.mkb-widget .mkb-widget-title {font-size: 20px;}.mkb-root .mkb-article-text,.mkb-root .mkb-article-header,.mkb-root .mkb-article-item__excerpt {color: #000000;}.mkb-root .mkb-article-text a,.mkb-root .mkb-article-header a,.mkb-article-item--detailed .mkb-entry-title a {color: #000000;}.mkb-root h1 {color: #000000;}.mkb-root h2 {color: #000;}.mkb-root h3 {color: #000000;}.mkb-root h4 {color: #000000;}.mkb-root h5 {color: #000000;}.mkb-root h6 {color: #000000;}.mkb-breadcrumbs {font-size: 16px;text-align: left;background-color: rgba(255,255,255,0);color: #000000;padding-top: 0em;padding-left: 0em;padding-right: 0em;padding-bottom: 0em;}.mkb-breadcrumbs li a {color: #000000;}.mkb-single .mkb-root {padding-top: 3em;padding-bottom: 3em;}.mkb-archive .mkb-root {padding-top: 3em;padding-bottom: 3em;}.mkb-settings-home-page .mkb-root {padding-top: 0em;padding-bottom: 0em;}.mkb-search .mkb-root {padding-top: 0em;padding-bottom: 0em;}.mkb-ticket .mkb-root {  padding-top: 3em;  padding-bottom: 3em;}.mkb-create-ticket .mkb-root {  padding-top: 3em;  padding-bottom: 3em;}.mkb-support-account .mkb-root {  padding-top: 3em;  padding-bottom: 3em;}.mkb-search-match {background: rgba(255,255,255,0);color: #000;}.mkb-pagination ul li {background: #f7f7f7;color: #000000;}.mkb-pagination ul li a {color: #00bed8;}/** * Guest posts */.mkb-client-submission-send {background: #4a90e2;color: #ffffff;}/** * Versions */.mkb-article-version,.mkb-article-version:hover,.mkb-article-version:active,.mkb-article-version:focus,.mkb-article-version:visited.mkb-article-versions a,.mkb-article-versions a:hover,.mkb-article-versions a:active,.mkb-article-versions a:focus,.mkb-article-versions a:visited {background: #00a0d2;color: #fff;}/** * Floating Helper */.mkb-floating-helper-wrap {  bottom: 2em;}.mkb-floating-helper-wrap.helper-position-btm_right {  right: 2em;}.mkb-floating-helper-wrap.helper-position-btm_left {  left: 2em;}.mkb-floating-helper-btn {background: #4a90e2;color: #ffffff;width: 78px;height: 78px;  transform: scale(0.6) translateY(14.285714285714em) translateX(.5em) rotate(-90deg);}.helper-position-btm_left .mkb-floating-helper-btn {  transform: scale(0.6) translateY(14.285714285714em) translateX(-.5em) rotate(90deg);}.mkb-floating-helper-btn .mkb-floating-helper-btn-icon {font-size: 38px;height: 38px;}.mkb-floating-helper-content {background: #4a90e2;color: #ffffff;width: 36em;}.mkb-floating-helper-content .kb-header .kb-search__results {max-height: 20em;}.mkb-floating-helper-content .kb-header .kb-search__form {max-height: calc(43px + 20em);}.mkb-glossary-term {  background: rgba(0, 170, 232, 0.2);  color: #000;  border-bottom: 2px dotted #505050;  }.mkb-root .mkb-article-text .mkb-glossary-term {  color: #000;}.mkb-glossary-tooltip {  width: 20rem;}.mkb-ticket-status.mkb-ticket-status--new {  background: #fcd93c;  color: #333;}.mkb-ticket-status.mkb-ticket-status--pending {  background: #05a6ef;  color: #fff;}.mkb-ticket-status.mkb-ticket-status--open {  background: #f44a2c;  color: #fff;}.mkb-ticket-status.mkb-ticket-status--on-hold {  background: #037caf;  color: #fff;}.mkb-ticket-status.mkb-ticket-status--closed {  background: #888;  color: #fff;}.mkb-create-ticket-form .mkb-button,.mkb-create-ticket-form input[type="submit"],.mkb-create-ticket-form input[type="submit"]:hover,.mkb-reply-to-ticket-form .mkb-button,.mkb-reply-to-ticket-form input[type="submit"],.mkb-reply-to-ticket-form input[type="submit"]:hover,.mkb-reopen-ticket-form .mkb-button,.mkb-reopen-ticket-form input[type="submit"],.mkb-reopen-ticket-form input[type="submit"]:hover,.mkb-provide-ticket-credentials-form .mkb-button,.mkb-provide-ticket-credentials-form input[type="submit"],.mkb-provide-ticket-credentials-form input[type="submit"]:hover,.mkb-create-support-account-form .mkb-button,.mkb-create-support-account-form input[type="submit"],.mkb-create-support-account-form input[type="submit"]:hover,.mkb-support-account-login-form .mkb-button,.mkb-support-account-login-form input[type="submit"],.mkb-support-account-login-form input[type="submit"]:hover {  background: #29abe2;  border: 2px solid #29abe2;}.mkb-create-ticket-form .mkb-button--secondary,.mkb-reply-to-ticket-form .mkb-button--secondary,.mkb-reopen-ticket-form .mkb-button--secondary,.mkb-provide-ticket-credentials-form .mkb-button--secondary,.mkb-create-support-account-form .mkb-button--secondary,.mkb-support-account-login-form .mkb-button--secondary {  background: transparent; /* for priority */  color: #29abe2;}/** * Feature Requests */.mkb-feature-request__actions .mkb-vote-for-feature {  color: #29abe2;  background-color: #ffffff;}.mkb-feature-request__actions .mkb-vote-for-feature:hover:not(.state--pending),.mkb-feature-request__actions .mkb-vote-for-feature.state--voted {  color: #ffffff;  background-color: #29abe2;  border-color: #29abe2;}
+</style>
+<link rel='stylesheet' id='minerva-kb/fa5-shim-css-css' href='https://macquariecloudservices.com/wp-content/plugins/minervakb/assets/vendor/fontawesome-free-5/css/v4-shims.min.css?ver=5.15.3' type='text/css' media='all' />
+<link rel='stylesheet' id='minerva-kb/fa5-css-css' href='https://macquariecloudservices.com/wp-content/plugins/minervakb/assets/vendor/fontawesome-free-5/css/all.min.css?ver=5.15.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://macquariecloudservices.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-js'></script>
+<script type='text/javascript' id='clickceaseFrontEnd-js-extra'>
+/* <![CDATA[ */
+var ajax_obj = {"cc_nonce":"4afac5b630","ajax_url":"https:\/\/macquariecloudservices.com\/wp-admin\/admin-ajax.php","ajax_action":"validate_clickcease_response"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://macquariecloudservices.com/wp-content/plugins/clickcease-click-fraud-protection/includes/assets/js/front-end.js?ver=1.0' id='clickceaseFrontEnd-js'></script>
+<script type='text/javascript' id='chained-common-js-extra'>
+/* <![CDATA[ */
+var chained_i18n = {"please_answer":"Please answer the question","please_provide_email":"Please provide valid email address","complete_text_captcha":"You need to answer the verification question","dont_autoscroll":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://macquariecloudservices.com/wp-content/plugins/chained-quiz/js/common.js?ver=0.9.1' id='chained-common-js'></script>
+<link rel="https://api.w.org/" href="https://macquariecloudservices.com/wp-json/" /><link rel="alternate" type="application/json" href="https://macquariecloudservices.com/wp-json/wp/v2/pages/15871" /><link rel="alternate" type="application/json+oembed" href="https://macquariecloudservices.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmacquariecloudservices.com%2Fmanaged-azure-services-permissions-non-csp-faq%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://macquariecloudservices.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmacquariecloudservices.com%2Fmanaged-azure-services-permissions-non-csp-faq%2F&#038;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><meta name="generator" content="Powered by Slider Revolution 6.6.15 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K54V47');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Page hiding snippet (recommended) -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>
+(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+})(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-K54V47':true});
+</script>
+
+<!-- UET Tag -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"17172970"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><link rel="icon" href="https://macquariecloudservices.com/wp-content/uploads/sites/3/2016/07/cropped-macquarie-circles-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://macquariecloudservices.com/wp-content/uploads/sites/3/2016/07/cropped-macquarie-circles-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://macquariecloudservices.com/wp-content/uploads/sites/3/2016/07/cropped-macquarie-circles-180x180.png" />
+<meta name="msapplication-TileImage" content="https://macquariecloudservices.com/wp-content/uploads/sites/3/2016/07/cropped-macquarie-circles-270x270.png" />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
 </head>
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+<body class="page-template page-template-page-templates page-template-page-club-sandwich page-template-page-templatespage-club-sandwich-php page page-id-15871 macquarie-cloud-services mkb-desktop mkb-fa5 mkb-version-2-0-8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K54V47"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- wrapper -->
+  <div class="wrapper">
+    <div id="site-wrapper">
+      <div id="site-canvas">
+        <!-- header -->
+        <header class="header clear">
+                      <div class="container top-section">
+              <div class="row">
+                <div class="col-sm-12 non-sticky">
+                  <div class="topbar-nav">
+                    <div class="widget_nav_menu"><div class="menu-company-links-container"><ul id="menu-company-links" class="menu"><li id="menu-item-16" class="business-unit-site menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://macquarietelecom.com">Telecom</a></li>
+<li id="menu-item-17" class="business-unit-site menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="https://macquariegovernment.com">Government</a></li>
+<li id="menu-item-9655" class="business-unit-site menu-item menu-item-type-custom menu-item-object-custom menu-item-9655"><a href="https://macquariedatacentres.com/">Data Centres</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://macquariecloudservices.com/support/">Support</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://macquariecloudservices.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20"><a href="https://www.macquarieview.com">Login</a>
+<ul class="sub-menu">
+	<li id="menu-item-6227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6227"><a href="https://portal.macquariecloudservices.com">Cloud Portal</a></li>
+	<li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21"><a href="https://www.macquarieview.com">Macquarie View</a></li>
+</ul>
+</li>
+</ul></div></div>                  </div>
+                </div>
+              </div>
+              <div class="row sticky-header-container">
+                <!-- toggle icon -->
+                <div class="sticky col-xs-2 no-print" style="display:none">
+                  <a href="#" class="toggle-nav">
+                    <div id="icon-toggle" class="toggle-mobile-icon-nav "></div>
+                  </a>
+                </div>
+                <!-- /toggle icon -->
+                <div class="col-xs-8 col-sm-4 logo-wrapper">
+                  <!-- logo -->
+                  <div class="logo">
+                    <a href="https://macquariecloudservices.com/" id="site-logo" title="Macquarie Cloud Services" rel="home">
+                      <img class="logo-img hi-res " src="https://macquariecloudservices.com/wp-content/themes/macquarie/img/logo-macquarie-cloud-services.svg" alt="Macquarie Cloud Services">
+                    </a>
+                  </div>
+                  <!-- /logo -->
+                </div>
 
+                <div class="col-sm-4 col-sm-offset-4 non-sticky ">
+                  <div class="search-box">
+                    <form action="/" method="get">
+                      <div class="search-input-group">
+                        <div class="search-input-icon">
+                          <input id="search-button" class="search-image" type="submit" value="" />
+                        </div>
+                        <div class="search-input-text">
+                          <input type="text" name="s" id="search-input-desktop" class="form-control" value="" required pattern="[\S\s]*\S[\S\s]*" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Please fill out this field');" />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- search icon -->
+                <div class="col-xs-2 sticky text-right pull-right search-mobile-button " style="display:none">
+                  <a data-toggle="collapse" data-target=".search-collapse">
+                    <img class="search-img hi-res" data-safe-defer-src src="https://macquariecloudservices.com/wp-content/themes/macquarie/img/icons/search-btn.png" alt="Macquarie Cloud Services Search Button">
+                  </a>
+                </div>
+                <!-- /search icon -->
+              </div>
+              <div class="collapse search-collapse search-mobile-collapse">
+                <div class="search-toggle-style sticky">
+                  <form action="/" method="get">
+                    <div class="search-input-group search-form">
+                      <div class="search-input-icon">
+                        <input id="search-button-mobile" class="search-image" type="submit" value="" />
+                      </div>
+                      <div class="search-input-text">
+                        <input type="text" name="s" id="search-input-mobile" class="form-control" value="" placeholder="Type your search here." required pattern="[\S\s]*\S[\S\s]*" oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Please fill out this field');" />
+                      </div>
+                    </div>
+                  </form>
+                  <a data-toggle="collapse" data-target=".search-collapse" class="close-icon-collapse">
+                    <img class="close-img hi-res" data-safe-defer-src src="https://macquariecloudservices.com/wp-content/themes/macquarie/img/toggle-nav-close.png" alt="Macquarie Cloud Services Toggle Search">
+                  </a>
+                </div>
+              </div>
+            </div>
+                    <!-- nav -->
+                                    <nav class="navbar primary-nav non-sticky">
+  <div class="container">
+    <div>
+      <div>
+        <div class="navbar-header hide">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hide" href="#">Brand</a>
+        </div>
+        <ul class="menu mega-menu-position">
+          <li class="dropdown mega-menu ">
+  <a href="https://macquariecloudservices.com/cloud-hosting/" class="visible-lg ">Cloud</a>
+  <a class="visible-md visible-sm">Cloud</a>
+  <div class="sub-mega-menu dropdown-menu">
+  <div class="container">
+    <div class="horizontal-margin row">
+      <div class="col-sm-12">
+        <div class="sub-menu-title">
+          <a href="https://macquariecloudservices.com/cloud-hosting/" class="sub-menu-title-link">Cloud</a>
+          <p class="menu-description">Finding the right cloud solution for your workload.</p>
+        </div>
+        <div>
+          <ul class="full-width">
+            <li class="">
+    <a href="https://macquariecloudservices.com/azure-public-cloud/">Public Cloud</a>
+    <p>Scalable, cost-effective solutions on the Microsoft Azure platform.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/cloud-hosting/hybrid-cloud/">Hybrid Cloud</a>
+    <p>Blending what you want to keep with what you should change.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/private-cloud/">Private Cloud</a>
+    <p>Dedicated cloud environment just for you on our Launch Platform.</p>
+</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</li><li class="dropdown mega-menu ">
+  <a href="https://macquariecloudservices.com/cyber-security/" class="visible-lg ">Cyber Security</a>
+  <a class="visible-md visible-sm">Cyber Security</a>
+  <div class="sub-mega-menu dropdown-menu">
+  <div class="container">
+    <div class="horizontal-margin row">
+      <div class="col-sm-12">
+        <div class="sub-menu-title">
+          <a href="https://macquariecloudservices.com/cyber-security/" class="sub-menu-title-link">Cyber Security</a>
+          <p class="menu-description"></p>
+        </div>
+        <div>
+          <ul class="full-width">
+            <li class="">
+    <a href="https://macquariecloudservices.com/cyber-security/managed-detection-and-response/">Managed Detection and Response</a>
+    <p>Powered by Microsoft Sentinel. Provides unified threat protection across devices, data and cloud workloads.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/cyber-security/managed-soc/">Managed SOC</a>
+    <p>24×7 onshore Australian security specialists. Your security experts, your peace of mind.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/cyber-security/managed-siem/">Managed SIEM</a>
+    <p>Real time threat monitoring of all cloud, on-premises and hybrid data from a single dashboard.</p>
+</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</li><li class="dropdown mega-menu ">
+  <a href="https://macquariecloudservices.com/cloud-solutions/" class="visible-lg ">Solutions</a>
+  <a class="visible-md visible-sm">Solutions</a>
+  <div class="sub-mega-menu dropdown-menu">
+  <div class="container">
+    <div class="horizontal-margin row">
+      <div class="col-sm-12">
+        <div class="sub-menu-title">
+          <a href="https://macquariecloudservices.com/cloud-solutions/" class="sub-menu-title-link">Solutions</a>
+          <p class="menu-description">IT solutions to help you reach your business objectives.</p>
+        </div>
+        <div>
+          <ul class="full-width">
+            <li class="">
+    <a href="https://macquariecloudservices.com/data-centres/colocation-solutions/">Colocation Solutions</a>
+    <p>Your IT equipment in our facility.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/cloud-solutions/disaster-recovery/">Disaster Recovery</a>
+    <p>It’s not if, it’s when. It pays to be prepared</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/managed-services/consultancy/">Consultancy</a>
+    <p>Trusted advisors to enrich your growth plans.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/managed-services/managed-cloud-services/">Managed Services</a>
+    <p>Our expertise to allow your experts to remain focused.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/cloud-solutions/data-backup/">Data Backup</a>
+    <p>We’ll keep your data safe, even when disaster strikes.</p>
+</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</li><li class="dropdown mega-menu ">
+  <a href="https://macquariecloudservices.com/industry-focus/" class="visible-lg ">Industries</a>
+  <a class="visible-md visible-sm">Industries</a>
+  <div class="sub-mega-menu dropdown-menu">
+  <div class="container">
+    <div class="horizontal-margin row">
+      <div class="col-sm-12">
+        <div class="sub-menu-title">
+          <a href="https://macquariecloudservices.com/industry-focus/" class="sub-menu-title-link">Industries</a>
+          <p class="menu-description">Focus on driving your business forward and leave your IT strategy to us.</p>
+        </div>
+        <div>
+          <ul class="full-width">
+            <li class="">
+    <a href="https://macquariecloudservices.com/accounting-industry/">Accounting</a>
+    <p>Migrate to the cloud critically adhering to compliance and certification standards.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/education-sector/">Education</a>
+    <p>Digitally evolving the learning experience for the leaders of tomorrow.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/financial-services-industry/">Financial Services Industry</a>
+    <p>Grow compliantly, securely and cost-effectively with Macquarie Cloud Services.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/manufacturing-industry/">Manufacturing</a>
+    <p>Laying the foundations for smoother IT operations.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/legal-industry/">Legal</a>
+    <p>Digital evolution of your firm whilst maintaining client experience.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/managed-service-providers/">MSPs</a>
+    <p>Enjoy economies of scale without detracting from your core offer.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/consulting-sector/">IT Consulting</a>
+    <p>Hosting, securing and accessing client data from a cloud platform.</p>
+</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</li><li class="dropdown mega-menu ">
+  <a href="https://macquariecloudservices.com/customers/" class="visible-lg ">Customer Stories</a>
+  <a class="visible-md visible-sm">Customer Stories</a>
+  <div class="sub-mega-menu dropdown-menu">
+  <div class="container">
+    <div class="horizontal-margin row">
+      <div class="col-sm-12">
+        <div class="sub-menu-title">
+          <a href="https://macquariecloudservices.com/customers/" class="sub-menu-title-link">Customer Stories</a>
+          <p class="menu-description">Sharing our customer stories is something we think you’d like to see.</p>
+        </div>
+        <div>
+          <ul class="full-width">
+            <li class="">
+    <a href="https://macquariecloudservices.com/customers/bpay-group/">BPay Group</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/cura-software/">CURA Software</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/holman-webb/">Holman Webb</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/icon-group/">Icon Group</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/fleetwood/">Fleetwood</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/jackson-mcdonald/">Jackson McDonald</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/micronet-systems/">Micronet Systems</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/life-healthcare/">LifeHealthCare</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/mastercare-global-health/">MasterCare and Global Health</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/st-john-ambulance-nsw/">St John Ambulance NSW</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/virtual-it-group/">Virtual IT Group</a>
+    <p></p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customers/v3-leisure/">V3 Leisure</a>
+    <p></p>
+</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</li><li class="dropdown mega-menu ">
+  <a href="https://macquariecloudservices.com/why-us/" class="visible-lg ">About</a>
+  <a class="visible-md visible-sm">About</a>
+  <div class="sub-mega-menu dropdown-menu">
+  <div class="container">
+    <div class="horizontal-margin row">
+      <div class="col-sm-12">
+        <div class="sub-menu-title">
+          <a href="https://macquariecloudservices.com/why-us/" class="sub-menu-title-link">About</a>
+          <p class="menu-description">More than meets the eye, with industry leading NPS and much more to know about us.</p>
+        </div>
+        <div>
+          <ul class="full-width">
+            <li class="">
+    <a href="https://macquariecloudservices.com/partners/">Strategic Partnerships</a>
+    <p>Working with the best in class to make your migration seamless.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/personal-accountable-service/">Our Commitment</a>
+    <p>To all the stakeholders in the MCS ecosystem.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/management-tools/">Customer Management Tools</a>
+    <p>‘Doing it Yourself’ can be empowering.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/customer-experience/">Customer Experience</a>
+    <p>A team of specialists who will always put you first.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/why-us/awards/">Awards</a>
+    <p>Check our most recent awards and achievements.</p>
+</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</li><li class="dropdown mega-menu ">
+  <a href="https://macquariecloudservices.com/blog/category/all/1/" class="visible-lg visible-md visible-sm">Blog</a>
+  <a class="visible-xs">Blog</a>
+  
+</li><li class="dropdown mega-menu ">
+  <a href="https://macquariecloudservices.com/careers/" class="visible-lg ">Careers</a>
+  <a class="visible-md visible-sm">Careers</a>
+  <div class="sub-mega-menu dropdown-menu">
+  <div class="container">
+    <div class="horizontal-margin row">
+      <div class="col-sm-12">
+        <div class="sub-menu-title">
+          <a href="https://macquariecloudservices.com/careers/" class="sub-menu-title-link">Careers</a>
+          <p class="menu-description">Top 20 Greatest Place to Work in Australia – welcoming talent at all levels.</p>
+        </div>
+        <div>
+          <ul class="full-width">
+            <li class="">
+    <a href="https://macquariecloudservices.com/careers/">Experienced Hires</a>
+    <p>Develop your career whilst delighting customers at Australia’s most recommended Cloud Provider.</p>
+</li><li class="">
+    <a href="https://macquariecloudservices.com/careers/graduates/">Graduate Hires</a>
+    <p>Macquarie Cloud Services Graduate Program welcomes tomorrows leaders, today.</p>
+</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+                        <div id="compressed-nav" style="display: none;">
+  <nav>
+    <div class="menu-header">
+      <h2 class="navigation-heading">Macquarie Cloud Services</h2>
+      <svg class="close-icon" id="lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><defs></defs><title>Close</title><line stroke="#fff" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.77px;" x1="7.81" y1="17.98" x2="18.05" y2="7.74"/><line stroke="#fff" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.77px;" x1="18.04" y1="17.96" x2="7.81" y2="7.74"/></svg>
+    </div>
+    <ul class="main-menu">
+      <li >
+  <a href="https://macquariecloudservices.com/cloud-hosting/" class="">Cloud</a>
+  <label title="Toggle Drop-down" class="nav-drop-icon ">▾</label>
+<ul class="">
+  <li><a href="https://macquariecloudservices.com/azure-public-cloud/" class="">Public Cloud</a></li><li><a href="https://macquariecloudservices.com/cloud-hosting/hybrid-cloud/" class="">Hybrid Cloud</a></li><li><a href="https://macquariecloudservices.com/private-cloud/" class="">Private Cloud</a></li>
+</ul>
+</li><li >
+  <a href="https://macquariecloudservices.com/cyber-security/" class="">Cyber Security</a>
+  <label title="Toggle Drop-down" class="nav-drop-icon ">▾</label>
+<ul class="">
+  <li><a href="https://macquariecloudservices.com/cyber-security/managed-detection-and-response/" class="">Managed Detection and Response</a></li><li><a href="https://macquariecloudservices.com/cyber-security/managed-soc/" class="">Managed SOC</a></li><li><a href="https://macquariecloudservices.com/cyber-security/managed-siem/" class="">Managed SIEM</a></li>
+</ul>
+</li><li >
+  <a href="https://macquariecloudservices.com/cloud-solutions/" class="">Solutions</a>
+  <label title="Toggle Drop-down" class="nav-drop-icon ">▾</label>
+<ul class="">
+  <li><a href="https://macquariecloudservices.com/data-centres/colocation-solutions/" class="">Colocation Solutions</a></li><li><a href="https://macquariecloudservices.com/cloud-solutions/disaster-recovery/" class="">Disaster Recovery</a></li><li><a href="https://macquariecloudservices.com/managed-services/consultancy/" class="">Consultancy</a></li><li><a href="https://macquariecloudservices.com/managed-services/managed-cloud-services/" class="">Managed Services</a></li><li><a href="https://macquariecloudservices.com/cloud-solutions/data-backup/" class="">Data Backup</a></li>
+</ul>
+</li><li >
+  <a href="https://macquariecloudservices.com/industry-focus/" class="">Industries</a>
+  <label title="Toggle Drop-down" class="nav-drop-icon ">▾</label>
+<ul class="">
+  <li><a href="https://macquariecloudservices.com/accounting-industry/" class="">Accounting</a></li><li><a href="https://macquariecloudservices.com/education-sector/" class="">Education</a></li><li><a href="https://macquariecloudservices.com/financial-services-industry/" class="">Financial Services Industry</a></li><li><a href="https://macquariecloudservices.com/manufacturing-industry/" class="">Manufacturing</a></li><li><a href="https://macquariecloudservices.com/legal-industry/" class="">Legal</a></li><li><a href="https://macquariecloudservices.com/managed-service-providers/" class="">MSPs</a></li><li><a href="https://macquariecloudservices.com/consulting-sector/" class="">IT Consulting</a></li>
+</ul>
+</li><li >
+  <a href="https://macquariecloudservices.com/customers/" class="">Customer Stories</a>
+  <label title="Toggle Drop-down" class="nav-drop-icon ">▾</label>
+<ul class="">
+  <li><a href="https://macquariecloudservices.com/customers/bpay-group/" class="">BPay Group</a></li><li><a href="https://macquariecloudservices.com/customers/cura-software/" class="">CURA Software</a></li><li><a href="https://macquariecloudservices.com/customers/holman-webb/" class="">Holman Webb</a></li><li><a href="https://macquariecloudservices.com/customers/icon-group/" class="">Icon Group</a></li><li><a href="https://macquariecloudservices.com/customers/fleetwood/" class="">Fleetwood</a></li><li><a href="https://macquariecloudservices.com/customers/jackson-mcdonald/" class="">Jackson McDonald</a></li><li><a href="https://macquariecloudservices.com/customers/micronet-systems/" class="">Micronet Systems</a></li><li><a href="https://macquariecloudservices.com/customers/life-healthcare/" class="">LifeHealthCare</a></li><li><a href="https://macquariecloudservices.com/customers/mastercare-global-health/" class="">MasterCare and Global Health</a></li><li><a href="https://macquariecloudservices.com/customers/st-john-ambulance-nsw/" class="">St John Ambulance NSW</a></li><li><a href="https://macquariecloudservices.com/customers/virtual-it-group/" class="">Virtual IT Group</a></li><li><a href="https://macquariecloudservices.com/customers/v3-leisure/" class="">V3 Leisure</a></li>
+</ul>
+</li><li >
+  <a href="https://macquariecloudservices.com/why-us/" class="">About</a>
+  <label title="Toggle Drop-down" class="nav-drop-icon ">▾</label>
+<ul class="">
+  <li><a href="https://macquariecloudservices.com/partners/" class="">Strategic Partnerships</a></li><li><a href="https://macquariecloudservices.com/personal-accountable-service/" class="">Our Commitment</a></li><li><a href="https://macquariecloudservices.com/management-tools/" class="">Customer Management Tools</a></li><li><a href="https://macquariecloudservices.com/customer-experience/" class="">Customer Experience</a></li><li><a href="https://macquariecloudservices.com/why-us/awards/" class="">Awards</a></li>
+</ul>
+</li><li >
+  <a href="https://macquariecloudservices.com/blog/category/all/1/" class="">Blog</a>
+  
+</li><li >
+  <a href="https://macquariecloudservices.com/careers/" class="">Careers</a>
+  <label title="Toggle Drop-down" class="nav-drop-icon ">▾</label>
+<ul class="">
+  <li><a href="https://macquariecloudservices.com/careers/" class="">Experienced Hires</a></li><li><a href="https://macquariecloudservices.com/careers/graduates/" class="">Graduate Hires</a></li>
+</ul>
+</li>
+    </ul>
+    <div class="bottom-content">
+      <div class="widget_nav_menu"><div class="menu-company-links-container"><ul id="menu-company-links-1" class="menu"><li class="business-unit-site menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://macquarietelecom.com">Telecom</a></li>
+<li class="business-unit-site menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="https://macquariegovernment.com">Government</a></li>
+<li class="business-unit-site menu-item menu-item-type-custom menu-item-object-custom menu-item-9655"><a href="https://macquariedatacentres.com/">Data Centres</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://macquariecloudservices.com/support/">Support</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://macquariecloudservices.com/contact-us/">Contact Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20"><a href="https://www.macquarieview.com">Login</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6227"><a href="https://portal.macquariecloudservices.com">Cloud Portal</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21"><a href="https://www.macquarieview.com">Macquarie View</a></li>
+</ul>
+</li>
+</ul></div></div>
+    </div>
+  </nav>
+</div>
+                    <!-- /nav -->
+        </header>
+        <!-- /header -->
+
+        <!-- main -->
+        <main id="main" class="enable-social-share">
+          <div class="body-wrap">
+            <section class="header-banner-module csw-row  dark" data-allow-header-bottom-overlap="true" >
+  <div class="container">
+    <div class="header-banner center row">
+      <div class="col-sm-8 col-sm-offset-2 banner-contents">
+        <h1>Frequently Asked Questions.</h1>
+        <h3 class="banner-subtitle">Delegated Administrative Privileges (DAP) and Lighthouse permissions for Enterprise Agreement and Web Direct customers.</h3>
+        
+        
+      </div>
+    </div>
+  </div>
+</section><section  class="generic-text-module csw-row light">
+  <div class="generic-text container">
+    
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="col-sm-8 col-sm-offset-2 generic-text-module-top-module">
+          
+          <p class="text-left"><p>As <a href="https://macquariecloudservices.com/partners/microsoft-2/">an authorised Microsoft Direct Bill Partner, and an Azure Expert MSP</a>, Macquarie Cloud Services require access to your Microsoft services in order to provide managed services for your business or organisation.</p>
+<p>On this page you will find answers to FAQs regarding the access we require for Managed Azure services, and the measures we take to protect that access.</p></p>
+        </div>
+        <div class="col-sm-12 panel-group accordion-items" id="accordion-content-297010082" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+  <div class="panel-heading" id="accordion_heading_639043596">
+    <h3 class="panel-title">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion-content-297010082" href="#accordion_collapse_639043596" aria-expanded="false" aria-controls="accordion_collapse_639043596">
+        <span class="accordion-heading-text">What am I accepting?</span>
+      </a>
+    </h3>
+  </div>
+
+  <div id="accordion_collapse_639043596" class="panel-collapse collapsed collapse"  aria-labelledby="accordion_heading_639043596">
+    <div class="panel-body">
+      <p>As part of on boarding you to a managed service, we request that you accept two relationship requests that enable us to manage your subscriptions. You will be asked to approve:</p>
+<ol>
+<li>a Lighthouse Azure Marketplace offer that provides delegated administrative privileges on the <strong>Azure subscriptions billed by Microsoft</strong>. (Example: subscription level roles for an Enterprise Agreement or a Microsoft Online Services offer)</li>
+<li>a Granular Delegated Administrative Privileges (GDAP) request that effectively gives us <strong>Azure Active Directory</strong> rights in your tenant for a combination of roles. (Tenant level roles)<br />
+Once accepted, Macquarie Cloud Services will be provided with granular and time-bound access to the set of roles in-line with our managed services scope of works.</li>
+</ol>
+<p><img decoding="async" loading="lazy" class="alignnone wp-image-15975 size-large" src="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/GDAPMdgEA-700x394.jpg" alt="" width="700" height="394" srcset="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/GDAPMdgEA-700x394.jpg 700w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/GDAPMdgEA-250x141.jpg 250w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/GDAPMdgEA-768x432.jpg 768w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/GDAPMdgEA-120x68.jpg 120w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/GDAPMdgEA.jpg 960w" sizes="(max-width: 700px) 100vw, 700px" /></p>
+
+    </div>
+  </div>
+</div><div class="panel panel-default">
+  <div class="panel-heading" id="accordion_heading_661495578">
+    <h3 class="panel-title">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion-content-297010082" href="#accordion_collapse_661495578" aria-expanded="false" aria-controls="accordion_collapse_661495578">
+        <span class="accordion-heading-text">What is the Azure Marketplace Managed Services offer?</span>
+      </a>
+    </h3>
+  </div>
+
+  <div id="accordion_collapse_661495578" class="panel-collapse collapsed collapse"  aria-labelledby="accordion_heading_661495578">
+    <div class="panel-body">
+      <p>The Azure subscription permissions we require when managing subscriptions that are billed directly by Microsoft are delivered through <a href="https://docs.microsoft.com/en-us/azure/lighthouse/concepts/managed-services-offers">Lighthouse</a>. The roles and groups are injected into your tenancy through the acceptance of a Managed Services offer published in the <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=macquarie%20cloud%20services&amp;page=1">Azure Marketplace</a>. Lighthouse does not have Azure AD rights, or Data Actions rights, and the highest Azure role possible is Contributor.</p>
+<p><img decoding="async" loading="lazy" class="alignnone wp-image-15880 size-full" src="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_13-51-49.png" alt="" width="882" height="574" srcset="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_13-51-49.png 882w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_13-51-49-250x163.png 250w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_13-51-49-700x456.png 700w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_13-51-49-768x500.png 768w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_13-51-49-120x78.png 120w" sizes="(max-width: 882px) 100vw, 882px" /></p>
+<h3><strong>Why do you need Azure subscription privileges?</strong></h3>
+<p>We require permissions at the Azure subscription level in order for:</p>
+<ul>
+<li>HMC to lodge support tickets with Microsoft,</li>
+<li>Solution Engineers to action Moves, Adds and Changes requests,</li>
+<li>Architects to manage and maintain automation, RBAC and management architecture</li>
+<li>Systems to ingest inventory and the CMDB</li>
+<li>HMC to monitor, alert, and action ticket incidents</li>
+<li>PCTOs to design, analyse, and optimise usage</li>
+<li>Service Delivery Managers to assist with costs and inventory requests.</li>
+</ul>
+<p>The roles and permissions may be viewed by going to the subscription, access control, role assignments. You may review this either asking a list of the permissions beforehand or at the time of acceptance of the <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=macquarie%20cloud%20services&amp;page=1">Azure Marketplace</a> offer.</p>
+<p><img decoding="async" loading="lazy" class="alignnone wp-image-15878 size-full" src="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_14-10-12.png" alt="" width="1135" height="536" srcset="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_14-10-12.png 1135w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_14-10-12-250x118.png 250w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_14-10-12-700x331.png 700w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_14-10-12-768x363.png 768w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-1-25_14-10-12-120x57.png 120w" sizes="(max-width: 1135px) 100vw, 1135px" /></p>
+<h3><strong>How do I accept the Marketplace offer?</strong></h3>
+<ul>
+<li>Please log into to the <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/macquariecloudservices.managed_services?tab=Overview">Azure marketplace</a> with the credentials of the Owner of the subscription.</li>
+<li>Click on the icon &#8220;Get it now&#8221;.</li>
+<li>You will be taken to the Azure portal to accept the offer, picking the Managed or Essentials plan as applicable.</li>
+<li>Don&#8217;t forget to delegate the subscriptions to the accepted offer.<br />
+<img decoding="async" loading="lazy" class="alignnone wp-image-15881 size-full" src="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2020-5-18_21-15-49.png" alt="" width="1044" height="625" srcset="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2020-5-18_21-15-49.png 1044w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2020-5-18_21-15-49-250x150.png 250w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2020-5-18_21-15-49-700x419.png 700w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2020-5-18_21-15-49-768x460.png 768w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2020-5-18_21-15-49-120x72.png 120w" sizes="(max-width: 1044px) 100vw, 1044px" /></li>
+<li>Check that we are now listed as your service provider by going to the <a href="https://portal.azure.com/#blade/Microsoft_Azure_CustomerHub/ServiceProvidersBladeV2/scopeManagement">Service Provider</a> blade.</li>
+</ul>
+
+    </div>
+  </div>
+</div><div class="panel panel-default">
+  <div class="panel-heading" id="accordion_heading_1718644095">
+    <h3 class="panel-title">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion-content-297010082" href="#accordion_collapse_1718644095" aria-expanded="false" aria-controls="accordion_collapse_1718644095">
+        <span class="accordion-heading-text">What is the GDAP relationship request?</span>
+      </a>
+    </h3>
+  </div>
+
+  <div id="accordion_collapse_1718644095" class="panel-collapse collapsed collapse"  aria-labelledby="accordion_heading_1718644095">
+    <div class="panel-body">
+      <p>Under the GDAP program, we nominate granular roles and privileges that provide just enough permissions in order to execute the managed services. These roles are injected into your tenancy, which means the groups, and our users do not exist in your Azure Active Directory tenancy. These privileges are not permanent and are only activated by us when required.</p>
+<p>Based on the directory roles assigned, members of our groups can manage your Azure services using our partner credentials and delegated administrative privileges.</p>
+<h3><strong>Why do you need Azure Active Directory privileges?</strong></h3>
+<p>Managed Azure<br />
+The collection of AAD roles that we request provides access to Azure Active Directory, which is the master identity store for services in Microsoft&#8217;s cloud. Our Managed Azure identity and access management services currently use the roles to:</p>
+<ul>
+<li>Automate the central logging of Azure AD logs for audit purposes.</li>
+<li>Automate systems ingestion of inventory, configuration management, and ticketing.</li>
+<li>Monitor the use of selected privileged accounts.</li>
+<li>Create and manage service principals.</li>
+<li>Assist in Conditional Access and Multi-Factor Authentication design and implementation.</li>
+<li>Enable subscriptions to tenant mapping into billing, configuration and ticket management systems</li>
+</ul>
+<table style="width: 100%;border-collapse: collapse;border-color: #000000;border-style: solid" border="1" cellpadding="10px">
+<tbody>
+<tr>
+<td style="width: 100%;border-style: solid;border-color: #000000;padding: 10px"><b>The GDAP roles below reflect the Azure Managed services proposal made to you. A GDAP link will be sent to you to review and accept the Azure Active Directory relationship requests, that lasts for 730 days. A user with Global Admin permission is required to accept the relationship.: No sort applied, activate to apply an ascending sort</b></td>
+</tr>
+<tr>
+<td style="width: 100%;border-style: solid;border-color: #000000;padding-right: 0px">
+<div style="height: 150px;overflow: auto">
+<p>Azure AD roles:</p>
+<ol>
+<li>Cloud application administrator: Can create and manage all aspects of app registrations and enterprise apps except App Proxy.</li>
+<li>Conditional access administrator: Can manage conditional access capabilities.</li>
+<li>License administrator: Ability to assign, remove and update license assignments.</li>
+<li>Privileged role administrator: Can manage role assignments in Azure AD, and all aspects of Privileged Identity Management.</li>
+<li>Billing administrator: Can perform common billing related tasks like updating payment information.</li>
+<li>Service support administrator: Can read service health information and manage support tickets.</li>
+<li>Directory readers: Can read basic directory information. Commonly used to grant directory read access to applications and guests.</li>
+<li>Security administrator: Can read security information and reports and manage configuration in Azure AD and Office 365.</li>
+<li>Security operator: Can create and manage security events</li>
+<li>User Administrator: Can manage all aspects of users and groups, including resetting passwords for limited admins.</li>
+</ol>
+<p>Note: GDAP acceptance does not create a commercial “rebilling” relationship or impact Azure subscription roles.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><strong>How do I accept the relationship request?</strong></h3>
+<ol>
+<li>Sign into Microsoft 365 Admin Center as Global Admin.</li>
+<li>Paste the GDAP link into your browser.</li>
+<li>From the Approve partner roles page that opens in the Microsoft 365 admin Center, please select Approve all.<br />
+<img decoding="async" loading="lazy" class="alignnone wp-image-15879 size-full" src="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-16-45.png" alt="" width="1198" height="994" srcset="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-16-45.png 1198w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-16-45-250x207.png 250w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-16-45-700x581.png 700w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-16-45-768x637.png 768w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-16-45-120x100.png 120w" sizes="(max-width: 1198px) 100vw, 1198px" /></li>
+<li>You will receive an email confirmation on the delegated approval.</li>
+</ol>
+<pre>You may choose not to grant us these Azure Active Directory roles, however, this would lengthen the on-boarding
+process (as we have to request your action and remediation to gather domains, access, logs, etc.) and impact
+on-going management, as explained above. You may choose:
+
+1. A minimal set of roles (Cloud Application Administrator, Directory Readers, License Administrator and Service Support Administrator). This will enable ticketing,
+however, we may not be able to fulfil the complete scope of the designed Managed Services as relevant
+to Azure Active Directory. 
+2. A custom set of roles. Please engage with your Macquarie Cloud Services account manager in order to
+further describe your requirements.</pre>
+
+    </div>
+  </div>
+</div><div class="panel panel-default">
+  <div class="panel-heading" id="accordion_heading_215463703">
+    <h3 class="panel-title">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion-content-297010082" href="#accordion_collapse_215463703" aria-expanded="false" aria-controls="accordion_collapse_215463703">
+        <span class="accordion-heading-text">What security measures are in place?</span>
+      </a>
+    </h3>
+  </div>
+
+  <div id="accordion_collapse_215463703" class="panel-collapse collapsed collapse"  aria-labelledby="accordion_heading_215463703">
+    <div class="panel-body">
+      <ul>
+<li><strong>Role Based Access Control</strong>. Engineers are members of the groups that have the Azure subscription and AAD privileged rights. Account Executives and Service Delivery Managers have commercial permissions. Service Desk Tier 1 engineers may log support tickets on your behalf.</li>
+<li><strong>Just-in-Time access</strong>. Macquarie Cloud Services uses Privileged Identity Management to protect customers. Roles and privileges are not permanent, but are activated on demand, whenever Tier 1/2 engineers require to execute actions, such as provisioning or troubleshooting. These automatically expire after the set period of time finishes. Actions are logged and audited for anomalies. Customers are able to monitor service provider activity by going to <a href="https://docs.microsoft.com/en-us/azure/lighthouse/how-to/view-service-provider-activity">Monitor service provider activity &#8211; Azure Lighthouse | Microsoft Docs</a>.</li>
+<li><strong>Multi-Factor Authentication</strong>. Macquarie identities and access measures are protected through MFA.</li>
+<li><strong>Just-enough privileges</strong>. Tier 1 help desk and non-technical staff are members in groups that have less privileges delegated, based on the least privileges principle.</li>
+</ul>
+
+    </div>
+  </div>
+</div><div class="panel panel-default">
+  <div class="panel-heading" id="accordion_heading_631120751">
+    <h3 class="panel-title">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion-content-297010082" href="#accordion_collapse_631120751" aria-expanded="false" aria-controls="accordion_collapse_631120751">
+        <span class="accordion-heading-text">What happens after acceptance of the relationships?</span>
+      </a>
+    </h3>
+  </div>
+
+  <div id="accordion_collapse_631120751" class="panel-collapse collapsed collapse"  aria-labelledby="accordion_heading_631120751">
+    <div class="panel-body">
+      <p>Once accepted, Macquarie Cloud Services will be provided with granular and time-bound access to the set of roles nominated.</p>
+<h3>Updating Lighthouse Permissions</h3>
+<p>From time to time, the permissions as published in the Marketplace offer change, due to solution and technology requirements. You can update the service provider offer by:</p>
+<ol>
+<li>Finding our offer at <a href="https://portal.azure.com/#blade/Microsoft_Azure_CustomerHub/ServiceProvidersBladeV2/overview">Service providers &#8211; Microsoft Azure</a></li>
+<li>Updating the offer by clicking the &#8220;update&#8221; icon. <a href="https://docs.microsoft.com/en-us/azure/lighthouse/how-to/view-manage-service-providers#update-service-provider-offers">View and manage service providers &#8211; Azure Lighthouse | Microsoft Docs</a>.</li>
+</ol>
+<p>if you wish to remove our permissions, an Owner can remove the entire offer or remove the delegations for that offer. <a href="https://docs.microsoft.com/en-us/azure/lighthouse/how-to/remove-delegation">Remove access to a delegation &#8211; Azure Lighthouse | Microsoft Docs</a></p>
+<p><img decoding="async" loading="lazy" class="alignnone wp-image-15877 size-full" src="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-53-16.png" alt="" width="1393" height="413" srcset="https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-53-16.png 1393w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-53-16-250x74.png 250w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-53-16-700x208.png 700w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-53-16-768x228.png 768w, https://macquariecloudservices.com/wp-content/uploads/sites/3/2022/05/image2022-5-13_9-53-16-120x36.png 120w" sizes="(max-width: 1393px) 100vw, 1393px" /></p>
+<p>&nbsp;</p>
+<h3><strong>Updating GDAP permissions</strong></h3>
+<p><strong>Renew</strong></p>
+<p>You’ll receive email reminders when the GDAP relationship expiration date is near (30 days, 7 days, and 1 day from the expiration date), and we will send you a new GDAP relationship request. If nothing is done, access will automatically expire once the existing relationship duration is reached, and you’ll receive an email confirmation. <strong>We will no longer have access to your tenant, and our users can no longer administer services on your behalf.</strong></p>
+<p><strong>Change</strong></p>
+<ul>
+<li>When you move a subscription from an Essentials to a Managed plan, please accept the Managed subscription GDAP request.</li>
+<li>When you move a subscription from a Managed plan to an Essentials plan,</li>
+</ul>
+<p><strong>Audit</strong></p>
+<p>You can track our activity by reviewing the AAD <a href="https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-sign-ins">sign-in logs</a>.</p>
+<p><strong>End</strong></p>
+<p>You may terminate a GDAP relationship by signing in as a Global Admin to the Microsoft 365 Admin Center, going to Partner relationships and selecting and removing the relevant relationship.</p>
+
+    </div>
+  </div>
+</div>
+</div>
+        
+      </div>
+    </div>
+  </div>
+</section><section id="" class="custom-form-module light">
+  <div class="custom-form-loader">
+    <div class="loading-indicator"></div>
+  </div>
+  <style>
+    .custom-form-module{
+     display: none !important;
+}
+
+.generic-text-module .generic-text .editor-items ul li {
+    margin-bottom: 0px;
+}
+  </style>
+  <div class="custom-form hide">
+    <div class="container">
+      <div class="custom-content-left" style="width: 50%;">
+        <p>&lt;!–– ––&gt;</p>
+
+      </div>
+      <div class="custom-content-right">
+        <p>&lt;!–– ––&gt;</p>
+
+      </div>
+    </div>
+  </div>
+</section>              </main>
+              <!-- /main -->
+                  <!-- footer desktop-->
+          <footer class="footer"> <!-- Business Footer Navigation -->
+            <div class="container">
+              <input type="hidden" name="disableChatSupport" value="">
+              <input type="hidden" name="pageLevelSFCampaignId" value="">
+              <input type="hidden" name="pageLevelPardotCampaignId" value="">              
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="footer-business-nav">
+                    <div class="footer-sidebar1">
+                      <div id="nav_menu-4" class="widget_nav_menu"><h3>Macquarie Cloud Services</h3><div class="menu-business-unit-footer-links-container"><ul id="menu-business-unit-footer-links" class="menu"><li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-37"><a href="https://macquariecloudservices.com/cloud-hosting/">Cloud</a>
+<ul class="sub-menu">
+	<li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"><a href="https://macquariecloudservices.com/cloud-hosting/vmware-cloud/">VMware Cloud</a></li>
+	<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://macquariecloudservices.com/cloud-hosting/hybrid-cloud/">Hybrid Cloud</a></li>
+</ul>
+</li>
+<li id="menu-item-13773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13773"><a href="https://macquariecloudservices.com/cyber-security/managed-soc-siem/">Cyber Security</a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="https://macquariecloudservices.com/managed-services/">Services</a></li>
+<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="https://macquariecloudservices.com/cloud-solutions/">Solutions</a></li>
+<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="https://macquariecloudservices.com/partners/">Partners</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="https://macquariecloudservices.com/why-us/">Why Us?</a></li>
+<li id="menu-item-1941" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1941"><a href="https://macquariecloudservices.com/blog/category/all/1/">Blog</a></li>
+<li id="menu-item-3042" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3042"><a href="https://macquariecloudservices.com/resources/1/">Resources</a></li>
+<li id="menu-item-13774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13774"><a href="https://macquariecloudservices.com/contact-us/">Locations</a></li>
+<li id="menu-item-2909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2909"><a href="https://macquariecloudservices.com/legal/">Legal</a></li>
+<li id="menu-item-1836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1836"><a href="https://macquarietechnologygroup.com/careers">Careers</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://macquariecloudservices.com/contact-us/">Contact Us</a></li>
+</ul></div></div>                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="footer-group-logos"> <!-- Business Logos -->
+                    <div class="footer-sidebar2">
+                      <div id="nav_menu-5" class="widget_nav_menu"><div class="menu-group-footer-links-container"><ul id="menu-group-footer-links" class="menu"><li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a href="https://macquarietechnologygroup.com/about-us/">About The Group</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="https://macquarietechnologygroup.com/news/">News</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a href="https://macquarietechnologygroup.com/investors/">Investors</a></li>
+</ul></div></div>                    </div>
+                    <div id="footer-business-logos" class="hidden-xs">
+                                            <a href="https://macquarietelecom.com">
+                        <img data-safe-defer-src src="https://macquariecloudservices.com/wp-content/themes/macquarie/img/logo-macquarie-telecom.png" alt="Macquarie Telecom Logo" title="Macquarie Telecom can help your business with voice, mobile, data or hybrid cloud hosting solutions" />
+                      </a>
+                      <a href="https://macquariecloudservices.com">
+                        <img data-safe-defer-src src="https://macquariecloudservices.com/wp-content/themes/macquarie/img/logo-macquarie-cloud-services.png" alt="Macquarie Cloud Services Logo" title="Macquarie Cloud Services are the experts in cloud hosting and colocation for disaster recovery" />
+                      </a>
+                      <a href="https://macquariegovernment.com">
+                        <img data-safe-defer-src src="https://macquariecloudservices.com/wp-content/themes/macquarie/img/logo-macquarie-government.png" alt="Macquarie Government Logo" title="Macquarie Government are secure cloud and VMware cloud experts for Canberra and Australian government" />
+                      </a>
+                      <a href="https://macquariedatacentres.com">
+                        <img data-safe-defer-src src="https://macquariecloudservices.com/wp-content/themes/macquarie/img/logo-macquarie-data-centres.png" alt="Macquarie Data Centres Logo" title="Macquarie Data Centres are TODO:" />
+                      </a>
+                    </div>
+                    <ul id="footer-list" class="visible-xs">
+                      <li>
+                        <a href="https://macquarietelecom.com" class="mobile-telecom-link">Telecom</a>
+                      </li>
+                      <li>
+                        <a href="https://macquariecloudservices.com" class="mobile-cloud-link">Cloud Services</a>
+                      </li>
+                      <li>
+                        <a href="https://macquariegovernment.com" class="mobile-government-link">Government</a>
+                      </li>
+                      <li>
+                        <a href="https://macquariedatacentres.com" class="mobile-data-link">Data Centres</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- copyright -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="footer-legal-nav">
+                    <span class="copyright">
+                      &copy; Copyright 2023 Macquarie Technology Group
+                    </span>
+
+                    <div id="menu-legal-navigation">
+                      <div class="footer-sidebar3">
+                        <div id="nav_menu-6" class="widget_nav_menu"><div class="menu-legal-footer-links-container"><ul id="menu-legal-footer-links" class="menu"><li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="https://macquariecloudservices.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188"><a href="https://macquariecloudservices.com/terms-of-use/">Terms Of Use</a></li>
+<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><a href="https://macquariecloudservices.com/service-agreements/">Service Agreements</a></li>
+</ul></div></div>                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </footer><!-- footer desktop -->
+                </div>
+      </div>
+    </div>
+        <!-- /wrapper -->
+    
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<link rel='stylesheet' id='rs-plugin-settings-css' href='https://macquariecloudservices.com/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.15' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<script type='text/javascript' id='macquarie_scripts-js-extra'>
+/* <![CDATA[ */
+var wp_script_vars = {"ajax_request_url":"https:\/\/macquariecloudservices.com\/wp-admin\/admin-ajax.php","sharethis_property_id":"64c8aca3a61afd0013749074","snap_engage_widget_id":"e7704505-34e2-4b0a-a1c2-f8e4961dfb54","chat_online_status":"1","current_bu":"macquariecloudservices","img_url":"https:\/\/macquariecloudservices.com\/wp-content\/themes\/macquarie\/img\/","enable_enquiry_form_debugging":"","template_directory_uri":"https:\/\/macquariecloudservices.com\/wp-content\/themes\/macquarie"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://macquariecloudservices.com/wp-content/themes/macquarie/js/scripts.min.js?ver=1695958659' id='macquarie_scripts-js'></script>
+<script type='text/javascript' src='https://macquariecloudservices.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.15' defer async id='tp-tools-js'></script>
+<script type='text/javascript' src='https://macquariecloudservices.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.15' defer async id='revmin-js'></script>
+<script type='text/javascript' id='minerva-kb/common-ui-js-js-extra'>
+/* <![CDATA[ */
+var MinervaKB = {"ajaxUrl":"https:\/\/macquariecloudservices.com\/wp-admin\/admin-ajax.php","siteUrl":"https:\/\/macquariecloudservices.com","platform":"desktop","info":{"isPost":false,"isPage":true,"isSingle":false,"isTicket":false,"isSupportClient":false,"isTicketAuthorView":false,"userCanAttachFiles":false,"isRTL":false,"postId":15871},"nonce":{"nonce":"6c89e492b3","nonceKey":"minerva_kb_ajax_nonce"},"settings":{"show_like_message":false,"show_dislike_message":false,"enable_feedback":false,"single_template":"plugin","feedback_mode":"dislike","feedback_email_on":false,"track_search_with_results":false,"ga_good_search_category":"Knowledge Base","ga_good_search_action":"Search success","ga_good_search_value":"","track_search_without_results":false,"ga_bad_search_category":"Knowledge Base","ga_bad_search_action":"Search fail","ga_bad_search_value":"","track_article_likes":false,"ga_like_category":"Knowledge Base","ga_like_action":"Article like","ga_like_label":"article_id","ga_like_value":"","track_article_dislikes":false,"ga_dislike_category":"Knowledge Base","ga_dislike_action":"Article dislike","ga_dislike_label":"article_id","ga_dislike_value":"","track_article_feedback":false,"ga_feedback_category":"Knowledge Base","ga_feedback_action":"Article feedback","ga_feedback_label":"article_id","ga_feedback_value":"","search_delay":"1000","live_search_show_excerpt":true,"active_search_groups":["kb"],"live_search_use_post":true,"show_back_to_top":true,"scrollspy_switch":false,"toc_in_content_disable":false,"global_scroll_offset":{"unit":"px","size":"30"},"article_fancybox":false,"article_sidebar":"left","article_sidebar_sticky":false,"article_sidebar_sticky_top":{"unit":"em","size":"3"},"article_sidebar_sticky_min_width":{"unit":"px","size":"1025"},"back_to_top_position":"inline","back_to_top_text":"Back to top","show_back_to_top_icon":true,"back_to_top_icon":"fa-long-arrow-up","back_to_site_top":true,"toc_scroll_offset":{"unit":"px","size":"0"},"search_mode":"nonblocking","search_needle_length":"3","search_request_fe_cache":true,"live_search_disable_mobile":false,"live_search_disable_tablet":false,"live_search_disable_desktop":false,"live_search_prevent_submit":true,"faq_filter_open_single":false,"faq_slow_animation":false,"faq_toggle_mode":false,"faq_enable_pages":false,"content_tree_widget_open_active_branch":true,"toc_url_update":false,"faq_url_update":false,"faq_scroll_offset":{"unit":"px","size":"0"},"toc_headings_exclude":"","antispam_failed_message":"Wrong security question answer, try again.","submit_success_message":"Your content has been submitted, thank you!","submit_content_editor_skin":"snow","fh_show_delay":"3000","fh_display_mode":"auto","glossary_mobile_mode":"popup","glossary_loader_icon":"fa-circle-o-notch","glossary_enable_pages":false,"glossary_scroll_offset":{"unit":"px","size":"0"},"glossary_highlight_limit":"0","glossary_highlight_post_types":[""],"glossary_highlight_exclude_ids":[""],"tickets_create_use_standalone_upload_button":true},"i18n":{"no-results":"No results","results":"results","result":"result","questions":"questions","question":"question","search_group_kb":"Knowledge Base","search_group_kb_topics":"Topics","search_group_faq":"FAQ","search_group_glossary":"Glossary","like_message_text":"<i class=\"fa fa-smile-o\"><\/i> Great!<br \/><strong>Thank you<\/strong> for your vote!","dislike_message_text":"Thank you for your vote!","feedback_label":"You can leave feedback:","feedback_email_label":"Your email (optional):","feedback_submit_label":"Send feedback","feedback_submit_request_label":"Sending...","feedback_info_text":"We will use your feedback to improve this article","feedback_sent_text":"Thank you for your feedback, we will do our best to fix this soon","submission_empty_title":"Title must not be empty","submission_empty_content":"Content must not be empty","form_error_general_text":"Some error has happened","ticket_create_error_empty_message_text":"Ticket message must not be empty","ticket_create_success_message_heading_text":"Your ticket has been created successfully!","ticket_create_success_email_sent_text":"Email has been sent to your email address.","ticket_create_success_email_not_sent_text":"Email has not been sent due to errors.","ticket_create_success_link_message_text":"Please, copy the link below to be able to access your ticket later.<br>\n<strong style=\"color:red\">DO NOT share this link online!<\/strong> \nAnyone with the link will be able to view, reply and manage this ticket.","ticket_credentials_saved_text":"Your credentials have been saved.","ticket_credentials_deleted_text":"Your credentials have been deleted.","ticket_credentials_error_empty_text":"Credentials must not be empty.","ticket_reply_error_empty_text":"Reply must not be empty.","ticket_reply_field_placeholder_text":"Write your reply here...","ticket_reply_success_message_text":"Your reply was saved, reloading page.","ticket_reply_error_files_not_added_text":"Some file(s) were not attached due to errors.","ticket_reopen_success_message_text":"Ticket has been reopened, reloading","recaptcha_user_message":"You must pass ReCaptcha to proceed","feature_request_submit_success_message":"Thank you, your feature request was submitted and will be published after moderation"},"glossary":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://macquariecloudservices.com/wp-content/plugins/minervakb/assets/js/minerva-kb-common-ui.js?ver=2.0.8' id='minerva-kb/common-ui-js-js'></script>
+<script type='text/javascript' src='https://macquariecloudservices.com/wp-content/plugins/minervakb/assets/js/minerva-kb.js?ver=2.0.8' id='minerva-kb/js-js'></script>
+  </body>
 </html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Database Caching 63/113 queries in 0.221 seconds using disk
+
+Served from: macquariecloudservices.com @ 2023-10-10 17:10:11 by W3 Total Cache
+-->
